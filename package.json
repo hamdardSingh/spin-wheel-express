@@ -1,0 +1,24 @@
+{
+  "name": "spin-wheel-express",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamdardSingh/spin-wheel-express.git"
+  },
+  "author": "Hamdard Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamdardSingh/spin-wheel-express/issues"
+  },
+  "homepage": "https://github.com/hamdardSingh/spin-wheel-express#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "path": "^0.12.7"
+  }
+}

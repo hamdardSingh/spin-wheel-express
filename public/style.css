@@ -1,0 +1,24 @@
+.triangle {
+  --r: 2px;
+  left: 72%;
+  top: 1rem;
+  transform: rotate(-7deg);
+  width: 42px;
+  aspect-ratio: 1;
+  border-bottom-left-radius: var(--r);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  --_g: calc(50% * (1 + 1 / tan(22.5deg)) - var(--r) / (3 * sqrt(2) - 4));
+  --_r: calc(var(--r) / tan(22.5deg)), #000 98%, #0000 101%;
+  -webkit-mask: radial-gradient(var(--r) at bottom var(--r) right var(--_r)),
+    radial-gradient(var(--r) at left var(--r) top var(--_r)),
+    conic-gradient(
+      from 202.5deg at var(--_g) calc(100% - var(--_g)),
+      #000 45deg,
+      #0000 0
+    );
+  background: linear-gradient(45deg, #fa6900, #c02942);
+}
+
+#optionsInput{
+  width: 280px;
+}

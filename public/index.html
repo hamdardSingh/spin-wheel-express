@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spin the Wheel - A fun and interactive way to make random decisions or play games." />
+    <meta name="keywords" content="spin wheel, random picker, decision maker, fun games" />
+    <meta name="author" content="Gravity4Apps" />
+    <title>Spin the Wheel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spin-wheel@5.0.2/dist/spin-wheel-iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <h1 class="text-2xl font-bold mb-2">Spin the Wheel</h1>
+    <p class="text-gray-600 mb-4">Make decisions or play games with spin wheel.</p>
+    <form id="optionForm" class="mb-4">
+      <input
+        type="text"
+        id="optionsInput"
+        placeholder="Enter options, comma separated"
+        class="p-2 border rounded"
+      />
+      <button type="submit" class="p-2 bg-blue-500 text-white rounded">
+        Set Options
+      </button>
+    </form>
+    <div class="relative w-96 h-96">
+      <div id="wheel-container" class="w-96 h-96"></div>
+      <div class="absolute triangle"></div>
+    </div>
+    <button id="spinButton" class="mt-4 p-2 px-6 bg-green-500 text-white rounded">
+      Spin me 🙂‍↔️
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
